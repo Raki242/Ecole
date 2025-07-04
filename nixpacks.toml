@@ -1,0 +1,17 @@
+[phases.setup]
+nixPkgs = ["php", "phpPackages.composer", "nodejs_18", "libmysqlclient"]
+
+[phases.install]
+cmds = [
+  "composer install --ignore-platform-reqs --no-interaction",
+  "npm ci"
+]
+
+[phases.build]
+cmds = [
+  "php artisan config:cache",
+  "php artisan migrate --force"
+]
+
+[start]
+cmd = "php artisan serve --host=0.0.0.0 --port=$PORT"
