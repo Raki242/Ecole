@@ -1,5 +1,29 @@
-vendor
-node_modules
+# Ignorer les dépendances
+/vendor
+/node_modules
+
+# Ignorer les fichiers d’environnement
 .env
-storage/*.key
-storage/*.log
+.env.*.php
+
+# Ignorer les caches Laravel
+/storage/*.key
+/storage/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+
+# Ignorer les fichiers compilés (Vite, Mix, Webpack)
+/public/hot
+/public/storage
+/public/build
+
+# Fichiers inutiles ou locaux
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,16 +1,35 @@
+# === Ignorer les dossiers de dépendances ===
 /vendor
 /node_modules
-/public/storage
+
+# === Dossiers compilés (vite, mix) ===
 /public/hot
 /public/build
+/public/storage
+
+# === Fichiers d'environnement ===
 .env
 .env.*.php
-Homestead.yaml
-Homestead.json
-.phpunit.result.cache
+
+# === Fichiers temporaires Laravel ===
 /storage/*.key
 /storage/app/public
 /storage/framework/cache/*
 /storage/framework/sessions/*
 /storage/framework/views/*
 /storage/logs/*
+
+# === Tests et fichiers inutiles ===
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+
+# === Ignorer les fichiers IDE ou système ===
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# === Autres caches possibles ===
+/composer.lock
+/package-lock.json
