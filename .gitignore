@@ -4,7 +4,6 @@
 
 # === Dossiers compilés (vite, mix) ===
 /public/hot
-/public/build
 /public/storage
 
 # === Fichiers d'environnement ===
